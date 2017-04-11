@@ -1,0 +1,340 @@
+/*
+Pacific Trails Resort
+Author: Kevin Ward
+Date: 4/3/2017
+*/
+
+/*Applies a natural box layout model to all elements*/
+* {
+	box-sizing: border-box;
+}
+
+/*Makes it comp with older browsers.*/
+header, nav, main, footer {
+	display: block;
+}
+
+/*Edits the body tag.*/
+body {
+	background-image: url("background.jpg");
+	color: #666666;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*Edits the header tag.*/
+header {
+	background-color: #000033;
+	color: #ffffff;
+	font-family: Georgia, sans-serif;
+}
+
+/*Edits the navigation bar tag.*/
+nav {
+	font-weight: bold;
+	float: left;
+	width: 160px;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+/*Edits the navigation unordered list tag.*/
+nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+/*Edits the a tags in the navigation bar.*/
+nav a {
+	text-decoration: none;
+}
+
+/*Edits the a tag link with a non default color.*/
+nav a:link {
+	color: #000033;
+}
+
+/*Edits the a tag after it's visited.*/
+nav a:visited {
+	color: #344873;
+}
+
+/*Edits the a tag when someone hovers over it.*/
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/*Edits the main body tag.*/
+main {
+	background-color: #FFFFFF;
+	margin-left: 170px;
+	padding-top: 1px;
+	padding-right: 20px;
+	padding-bottom: 1px;
+	padding-left: 20px;
+	display: block;
+}
+
+/*Edits the h1 heading tag.*/
+h1 {
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-left: 20px;
+	line-height: 200%;
+	height: 72px;
+	margin-bottom: 0;
+}
+
+/*Edits the h2 heading tag.*/
+h2 {
+	color: #3399cc;
+	font-family: Georgia, sans-serif;
+}
+
+/*Edits the h3 heading tag.*/
+h3 {
+	color: #000033;
+}
+
+/*Edits the description title tag.*/
+dt {
+	color: #000033;
+	font-weight: bold;
+}
+
+/*Adds a table to the yurts page.*/
+table {
+	width: 90%;
+	margin: auto;
+	border: 1px solid #3399CC;
+	border-collapse: collapse;
+}
+
+/*Cell border and padding with centered text.*/
+td, th {
+	border: 1px solid #3399CC;
+	padding: 5px;
+}
+
+td {
+	text-align: center;
+}
+
+/*Even rows have light blue background.*/
+tr:nth-of-type(even) {
+	background-color: #F5FAFC;
+}
+
+/*Overrides cell style with left align text.*/
+.text {
+	text-align: left;
+}
+
+/*Adds a form to the reservations page.*/
+form {
+	width: 21em;
+	background-color: #FEFCFF;
+	border: 1px solid #90C7E3;
+	padding: 1em;
+}
+
+/*Aligns text and box inputs, adds spacing, and a blue submit button.*/
+label {
+	float: left;
+	display: block;
+	width: 8em;
+	padding-right: 1em;
+}
+
+input, textarea {
+	display: block;
+	border: 1px solid #90C7E3;
+	margin-bottom: 1em;
+}
+
+#mySubmit {
+	font-family: Georgia, serif;
+	background-color: #FFFFFF;
+	padding: 0.5em;
+	margin-left: 10em;
+}
+
+/*Edits the class tag named resort.*/
+.resort {
+	color: #000033;
+	font-size: 1.2em;
+}
+
+/*Edits the footer tag at the bottom of the page.*/
+footer {
+	background-color: #FFFFFF;
+	font-size: .70em;
+	font-style: italic;
+	text-align: center;
+	margin-left:170px;
+	padding: 10px;
+}
+
+/*Edits the id named wrapper containing the whole body of the page.*/
+#wrapper {
+	background-color: #90C7E3;
+	min-width: 700px;
+	max-width: 1024px;
+	/*width: 80%; unused now*/
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 5px 5px 5px #1E1E1E;
+}
+
+/*Edits the id named homehero containing the image for the home page.*/
+#homehero {
+	height: 300px;
+	background-image: url("coast.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left:170px;
+}
+
+/*Edits the id named homehero containing the image for the home page.*/
+#yurthero {
+	height: 300px;
+	background-image: url("yurt.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left:170px;
+}
+
+/*Edits the id named homehero containing the image for the home page.*/
+#trailhero {
+	height: 300px;
+	background-image: url("trail.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left:170px;
+}
+
+/*Edits the ids named mobile and desktop for which version is displayed.*/
+#mobile {
+	display: none;
+}
+
+#desktop {
+	display: inline;
+}
+
+/*Display block code for older IE.*/
+header, nav, main, footer {
+	display: block;
+}
+
+/*Checks device type and mobile display as tablet.*/
+@media only screen and (max-width: 1024px) {
+	body {
+		background-image: none;
+		padding: 0;
+		margin: 0;
+	}
+	nav {
+		float: none;
+		width: auto;
+		padding: 0.5em;
+	}
+	nav li {
+		display: inline-block;
+	}
+	nav a {
+		padding: 1em;
+	}
+	main {
+		font-size: 90%;
+		padding: 1em;
+		margin-left: 0;
+	}
+	h1 {
+		margin: 0;
+	}
+	footer {
+		margin: 0;
+	}
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		box-shadow: none;
+	}
+	#homehero, #yurthero, #trailhero {
+		margin-left: 0;
+	}
+}
+
+/*Checked device type and mobile display as cell phone.*/
+@media only screen and (max-width: 768px) {
+	body {
+		background-image: none;
+		padding: 0;
+		margin: 0;
+	}
+	nav {
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	nav li {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	nav a {
+		display: block;
+		font-size: 1.3em;
+		padding: 0.2em;
+		border-bottom: 1px solid #330000;
+	}
+	main {
+		font-size: 90%;
+		padding-top: 0.1em;
+		padding-bottom: 0.1em;
+		padding-left: 0.4em;
+		padding-right: 0.6em;
+		margin-left: 0;
+	}
+	h1 {
+		font-size: 1.5em;
+		height: 100%;
+		margin: 0;
+		padding-left: 0.3em;
+	}
+	footer {
+		margin: 0;
+		padding: 0;
+	}
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		box-shadow: none;
+	}
+	#homehero, #yurthero, #trailhero {
+		display: none;
+	}
+	#mobile {
+		display: inline;
+	}
+	#desktop {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
